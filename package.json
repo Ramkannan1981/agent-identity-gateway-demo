@@ -1,0 +1,23 @@
+{
+  "name": "agent-identity-gateway-demo",
+  "version": "1.0.0",
+  "description": "Deterministic authorization for AI agent tool calls: short-lived scoped credentials, revocation, default-deny policy, tamper-evident audit log. Enforced outside the model, so a prompt-injected agent still cannot exceed its credential.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsx --test --test-reporter=spec eval/*.test.ts",
+    "demo": "tsx src/demo.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "Ramkannan A",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "jose": "^6.2.12"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
